@@ -22,7 +22,7 @@ public class Mydapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getCount() {//นับจำนวน DB
         return ints.length;
     }
 
@@ -37,7 +37,7 @@ public class Mydapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int i, View view, ViewGroup viewGroup) {//แสดงผลข้อมูลบนแอป
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view1 = layoutInflater.inflate(R.layout.my_listview, viewGroup, false);
 
